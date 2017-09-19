@@ -1,2 +1,2 @@
 # Model_Trees_Full_Dataset
-hockey data crawled from [nhl](https://www.nhl.com/), [eliteprospects](http://www.eliteprospects.com/)and [draft analyst](https://www.thedraftanalyst.com/)
+hockey data crawled from [NHL webiste](https://www.nhl.com/), [Eliteprospects](http://www.eliteprospects.com/) and [Draft Analyst webiste](https://www.thedraftanalyst.com/)
