@@ -14,3 +14,9 @@
      + github name: elite_prospects_skaters_stats_1998_2008_original.csv
      + database name: elite_prospects_skaters_stats_1998_2008_original
   
+## Semantics
+
+Field Name| Explanation|
+----------|------------|
+id        | nhl.com id for NHL players, otherwise Eliteprospects.com id|
+Draft Age | Age in Draft Year|
