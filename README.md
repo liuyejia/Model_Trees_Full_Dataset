@@ -18,14 +18,14 @@
         1. sum_7yr_GP > 0 is entered in column gp_7_yr > 0 as target class label.
         2. null values for counts are converted to 0 (e.g. po_GP = null becomes po_GP = 0).
         3. countries -> USA, Canada, Europe. So European countries are lumped together (no disrespect intended).
+        4. null values for CSS_rank are converted to the (maximum_rank + 1) of the corresponding year.
      + github name: preprocessed_datasets.csv
-     + database name: chao_draft.join_skater_and_season_stats_10_years_CSS_null
+     + database name: chao_draft.join_skaters_with_null_col
    + Normalized Stats. This is the input for model tree learning.
      + Processing Steps:
         1. standardize data to the same range, i.e. x := x - min(x)/(max(x) - min(x)), see [here](https://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range#70807). The max is chosen with respect to each cohort (cohort 1 has draft year 1998-2002, cohort 2 has draft year 2004-2008).
-        2. map null values for CSS rank to maximum 1. That is, players that were not ranked by scouts are assigned to the lowest rank.
      + github name: normalized_datasets.csv
-     + database name: chao_draft.norm_dataset_for_lmt
+     + database name: chao_draft.norm_data_without_null_rank
   
 ## Semantics
 
