@@ -22,7 +22,7 @@
      + database name: chao_draft.join_skater_and_season_stats_10_years_CSS_null
    + Normalized Stats. This is the input for model tree learning.
      + Processing Steps:
-        1. standardize data to the same range, i.e. x := x - min(x)/(max(x) - min(x)), see [here](https://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range#70807).
+        1. standardize data to the same range, i.e. x := x - min(x)/(max(x) - min(x)), see [here](https://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range#70807). The max is chosen with respect to each cohort (cohort 1 has draft year 1998-2002, cohort 2 has draft year 2004-2008).
         2. map null values for CSS rank to maximum 1. That is, players that were not ranked by scouts are assigned to the lowest rank.
      + github name: normalized_datasets.csv
      + database name: chao_draft.norm_dataset_for_lmt
