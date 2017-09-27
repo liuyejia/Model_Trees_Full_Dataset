@@ -23,7 +23,7 @@
      + database name: chao_draft.join_skaters_with_null_col
    + Normalized Stats. This is the input for model tree learning.
      + Processing Steps:
-        1. standardize data to the same range, i.e. x := x - min(x)/(max(x) - min(x)), see [here](https://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range#70807). The max is chosen with respect to each cohort (cohort 1 has draft year 1998-2002, cohort 2 has draft year 2004-2008).
+        1. standardize data to the same range, i.e. x := x - min(x)/(max(x) - min(x)), see [here](https://en.wikipedia.org/wiki/Feature_scaling). The max is chosen with respect to each cohort (cohort 1 has draft year 1998-2002, cohort 2 has draft year 2004-2008).
      + github name: normalized_datasets.csv
      + database name: chao_draft.norm_data_without_null_rank
   
