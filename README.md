@@ -17,7 +17,7 @@
      + Processing Steps: 
         1. sum_7yr_GP > 0 is entered in column gp_7_yr > 0 as target class label.
         2. null values for counts are converted to 0 (e.g. po_GP = null becomes po_GP = 0).
-        3. countries -> country_group = USA, Canada, Europe. So European countries are lumped together (no disrespect intended).
+        3. countries -> country_group = USA, CAN, EURO. So European countries are lumped together (no disrespect intended).
         4. null values for CSS_rank are converted to the (maximum_rank + 1) of the corresponding year.
      + github name: preprocessed_datasets.csv
      + database name: chao_draft.join_skaters_with_null_col
