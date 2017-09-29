@@ -10,9 +10,9 @@
    + Draft Stats.
      + github name: elite_prospects_skaters_stats_1998_2008_original.csv
      + database name: chao_draft.elite_prospects_skaters_stats_1998_2008_original
-   + Complete Table. Combines NHL season stats and Draft Stats. This is the file on which we base our learning method. 
+   + Complete Table. Combines NHL season stats and Draft Stats. This is the file on which we base our learning method.(po_PlusMinus were dropped due to missing values) 
      + github name: raw_datasets.csv
-     + Database Table Name: chao_draft.join_skater_and_season_stats_10_years_view
+     + Database Table Name: chao_draft.join_skater_and_season_stats_10_years_without_po_plusminus
    + Processed Stats. Applying preprocessing steps to the complete raw data table.
      + Processing Steps: 
         1. sum_7yr_GP > 0 is entered in column gp_7_yr > 0 as target class label.
@@ -20,12 +20,12 @@
         3. countries -> country_group = USA, CAN, EURO. So European countries are lumped together (no disrespect intended).
         4. null values for CSS_rank are converted to the (maximum_rank + 1) of the corresponding year.
      + github name: preprocessed_datasets.csv
-     + database name: chao_draft.join_skaters_with_null_col
+     + database name: chao_draft.join_skaters_preprocessed_without_po_PlusMinus
    + Normalized Stats. This is the input for model tree learning.
      + Processing Steps:
         1. standardize data to the same range, i.e. x := x - min(x)/(max(x) - min(x)), see [here](https://en.wikipedia.org/wiki/Feature_scaling). The max is chosen with respect to each cohort (cohort 1 has draft year 1998-2002, cohort 2 has draft year 2004-2008).
      + github name: normalized_datasets.csv
-     + database name: chao_draft.norm_data_without_null_rank
+     + database name: chao_draft.norm_data_without_po_PlusMinus
   
 ## Semantics
 
