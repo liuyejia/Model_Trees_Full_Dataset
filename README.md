@@ -2,7 +2,7 @@
 
 ## Provenance
 
-+ on-line sources: hockey data crawled from [NHL](https://www.nhl.com/), [Eliteprospects](http://www.eliteprospects.com/) and [Draft Analyst](https://www.thedraftanalyst.com/). Thank you to David Wilson for letting us use his draft data set!
++ on-line sources: hockey data crawled from [NHL](https://www.nhl.com/), [Eliteprospects](http://www.eliteprospects.com/) and [Draft Analyst](https://www.thedraftanalyst.com/). Our dataset contains all the players who got an NHL contract drafted from 1998 to 2008(excluded year 2003 due to too many missing CSS_rank online). Thank you to David Wilson for letting us use his draft data set!
 + local sources: Databases are stored in cs-oschulte-01.cs.sfu.ca
    + NHL season stats. Used to compute 7-years career stats.
      + github name: NHL_season_stats_1997_2017_original.csv
