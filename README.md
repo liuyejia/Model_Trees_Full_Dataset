@@ -10,13 +10,13 @@
    + Draft Stats.
      + github name: elite_prospects_skaters_stats_1998_2008_original.csv
      + database name: chao_draft.elite_prospects_skaters_stats_1998_2008_original
-   + Complete Table. Combines NHL season stats and Draft Stats. This is the file on which we base our learning method.(po_PlusMinus were dropped due to missing values) 
+   + Complete Table. Combines NHL season stats and Draft Stats. This is the file on which we base our learning method.(po_PlusMinus were dropped due to missing values in [Eliteprospects](http://www.eliteprospects.com/) 
      + github name: raw_datasets.csv
      + Database Table Name: chao_draft.join_skater_and_season_stats_10_years_without_po_plusminus
    + Processed Stats. Applying preprocessing steps to the complete raw data table.
      + Processing Steps: 
         1. sum_7yr_GP > 0 is entered in column gp_7_yr > 0 as target class label.
-        2. null values for counts are converted to 0 (e.g. po_GP = null becomes po_GP = 0).
+        2. null values for counts are converted to 0 (e.g. po_GP = null becomes po_GP = 0). So if a player didn't play in the playoffs, they are assigned 0 for all playoff stats. 
         3. countries -> country_group = USA, CAN, EURO. So European countries are lumped together (no disrespect intended).
         4. null values for CSS_rank are converted to the (maximum_rank + 1) of the corresponding year.
      + github name: preprocessed_datasets.csv
