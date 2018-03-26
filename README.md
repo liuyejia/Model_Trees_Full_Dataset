@@ -1,5 +1,5 @@
 # Model_Trees_Full_Dataset
-
+**(If you use our datasets, please cite our paper: https://arxiv.org/abs/1802.08765)**
 ## Provenance
 
 + on-line sources: hockey data crawled from [NHL](https://www.nhl.com/), [Eliteprospects](http://www.eliteprospects.com/) and [Draft Analyst](https://www.thedraftanalyst.com/). Our dataset contains all the players who got an NHL contract drafted from 1998 to 2008( excluded 2003 due to too many missing CSS_rank data that year). Thank you to David Wilson for letting us use his draft data set!
