@@ -1,4 +1,4 @@
-# Model_Trees_Full_Dataset
+# Model_Trees_Full_Dataset: NHL Draft Data
 **(If you use our datasets, please cite our paper: https://arxiv.org/abs/1802.08765)**
 ## Provenance
 
